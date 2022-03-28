@@ -37,10 +37,67 @@
         </p>
       </header>
       <main class="col-12 col-lg-9">
-        <div class="m-5">
-          <h2>To Do</h2>
-          <ul id="list-toDo" class="list-group"></ul>
+        <div class="m-5 row justify-content-around">
+          <!-- ToDo Begin -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header">To Do</h4>
+              <ul id="list-toDo" class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">date</span>
+                  <p class="m-1">Sample task to do</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ToDo End -->
+          <!-- In Progress Begin -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header">In Progress</h4>
+              <ul id="list-inProgress" class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">
+                    05/08/2020
+                  </span>
+                  <p class="m-1">Sample task in progress</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- In Progress End -->
+          <!-- In Review Start -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header">In Review</h4>
+              <ul id="list-inReview" class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">
+                    04/08/1999
+                  </span>
+                  <p class="m-1">Sample task in review</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- In Review End -->
+          <!-- Finished Start -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header">Finished</h4 class="card-header">
+              <ul id="list-finished" class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">
+                    01/29/2022
+                  </span>
+                  <p class="m-1">Sample task finished</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Finished End -->
         </div>
+        <!-- Task columns row end -->
       </main>
     </div>
 
@@ -70,7 +127,7 @@
             <form>
               <div class="form-group">
                 <label for="modalTaskDescription">Task description</label>
-                <textarea id="modalTaskDescription" rows="3"></textarea>
+                <textarea id="modalTaskDescription" class="form-control" rows="3"></textarea>
               </div>
               <div class="form-group">
                 <label for="modalDueDate">Due date</label>
@@ -79,6 +136,7 @@
                   id="modalDueDate"
                   placeholder="mm/dd/yyyy"
                   autocomplete="off"
+                  class="form-control"
                 />
               </div>
             </form>
